@@ -1,5 +1,21 @@
 # MySQL Database Analysis Portfolio
 
+**Summary:** I used related customer, order, and return records to investigate return patterns and demonstrate how SQL can support review of business activity.
+
+**Project type:** Academic MySQL database and analysis exercise.
+
+## Business Questions and Evidence
+
+**Questions:** Where are returns concentrated, which product types account for a larger share of returns, and how can a requested record update be verified?
+
+**My role:** I built related tables, wrote joins and aggregate queries, updated and checked an RMA record, and prepared a CSV export.
+
+**Available evidence:** The documented location query reports 505 orders for customers in Framingham, Massachusetts. [Analysis queries](analysis_queries.sql) show how to summarize returns by state and product description; [database setup](database_setup.sql) shows the table structure.
+
+**Interpretation and limits:** A high return count does not by itself establish a high return rate or a product-quality problem. The product percentage query measures share of all RMA records, not returns divided by sales for each product. The repository does not include the source dataset or full return-analysis output, so those findings cannot be independently reproduced here.
+
+**Recommendation:** Use the return summaries to identify areas for further review, then compare returns with sales volume and examine return reasons before recommending corrective action. Check missing values, duplicate records, and join coverage before relying on the totals; completed cleaning results are not claimed in this repository.
+
 A beginner MySQL project demonstrating relational database design, SQL queries, data analysis, record updates, and CSV export.
 
 ## About the Project
